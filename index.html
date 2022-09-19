@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="http://fonts.cdnfonts.com/css/norse" rel="stylesheet">
+    <link rel="stylesheet" href="sidehusle.css">
+    <title>Document</title>
+</head>
+<body>
+<!---Body section-->
+<section class="container">
+
+    <!---background and logo--->
+    <section class="bimage">
+        <div class="logo">
+            <img src="logo.png" alt="logo">
+            <h1 class="odin">ODIN</h1>
+        </div>
+        <h6>Photo by BEN</h6>
+    </section>
+
+    <div class="start">
+        <section class="side">
+            <p class="side1">This is not the real online You know you need something
+                like this in your life to help you realize your deepest dreams.</p> <br> 
+            <p class="side2">You <span class="side3">know</span> you want to.</p>
+        </section>
+
+        <!---form--->
+            <section class="form">
+                    <h5>Let's do this!</h5>
+                <form action="">
+                    <section class="list">
+                        <section>
+                            <label for="fname">FIRST NAME</label><br>
+                            <input type="text" id="fname" name="fname" value="Thor"><br>
+                            <label for="Email">EMAIL</label><br>
+                            <input type="email" id="email" name="email"><br>
+                            <label for="pword">PASSWORD</label><br>
+                            <input type="password" id="pword" name="pword";><br>
+                        </section>
+
+                        <section>
+                            <label for="Lname">LAST NAME</label><br>
+                            <input type="text" id="Lname" name="Lname" placeholder="Odinson" class="lname"><br>
+                            <label for="number">PHONE NUMBER</label><br>
+                            <input type="number" id="number" name="number"><br>
+                            <label for="Cpword">CONFIRM PASSWORD</label><br>
+                            <input type="password" id="Cpword" name="Cpword" pattern="con" onkeyup="check();" >
+                            <br>
+                            <span id="message"></span>
+                        </section>
+                    </section>
+                    <script type="text/javascript">
+                        var check = function() {
+                            if (document.getElementById('pword').value ==
+                            document.getElementById('Cpword').value) {
+                            document.getElementById('message').style.color = 'green';
+                            document.getElementById('message').innerHTML = 'Password match';
+                            } else {
+                            document.getElementById('message').style.color = 'red';
+                            document.getElementById('message').innerHTML = 'Password do not match';
+                            }
+                        }
+                    </script>
+                </form>
+            </section >
+            <section class="button">
+                <input type="submit" value="Create Account" class="button1" >
+                <p >Already have an account? <a href=""><strong>Log in</strong></a></p>
+            </section>
+    </div>
+</section>
+</body>
+</html>
